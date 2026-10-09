@@ -10,6 +10,12 @@ public class Car {
         this.currentMoveCount = 0;
     }
 
+    public void move(int number) {
+        if (number >= 4) {
+            currentMoveCount++;
+        }
+    }
+
     public static Car of(String name) {
         return new Car(name);
     }
